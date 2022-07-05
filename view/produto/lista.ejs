@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <title>Lista de produtos</title>
+</head>
+
+<body>
+  <h1>
+    <%= mensagem %>
+  </h1>
+  <ul>
+    <% docs.forEach(function(produto){ %>
+      <li>
+        <h2>
+          <%= produto.nome %>
+        </h2>
+        <div class="nome__botoes">
+          <input type="button" onclick="location.href='/delete/produto/<%= produto.id %>'" value="Comprar" />
+        </div>
+      </li>
+      <% }) %>
+  </ul>
+  <br>
+  <br>
+  <input type="button" onclick="location.href='/cadastroP'" value="Novo produto" />
+  <input type="button" onclick="location.href='/lista/usuario'" value="Lista de usuários" />
+</body>
+
+</html>

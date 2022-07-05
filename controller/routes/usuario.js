@@ -4,10 +4,10 @@ const usuarioBanco = require('../../model/repositories/usuarioDB')
 module.exports = function (app){
 
     app.get("/", function(req, resp){
-        resp.send("<h1>Bem-vindo ao meu app</h1>");
+        resp.send("<h1>Bem-vindo ao meu app. Insira /login na url para prosseguir.</h1>");
     })
    
-    app.get('/cadastro', function (req, res){
+    app.get('/cadastroP', function (req, res){
         if(req.query.fail) 
             res.render('usuario/CadastroUsuario', {mensagem: 'Cadastro'});
         else
