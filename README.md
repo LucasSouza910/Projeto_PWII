@@ -1,6 +1,13 @@
 # Instruções
 
-Alterar informações referentes a conexão com o banco de dados (controller/SQL/db.js) e (controller/SQL/Sequelize/dborm.js).
+Alterar informações referentes a conexão com o banco de dados 
+
+    controller/SQL/db.js 
+
+e 
+
+    controller/SQL/Sequelize/dborm.js
+
 
 Baixar seguintes pacotes (se copiar e colar com o botão direito do mouse no terminal do vscode, todos instalarão de uma vez só, exceto o ultimo que deve ser instalado manualmente):
 
@@ -33,5 +40,7 @@ Executar seguinte script no MySQL Workbench:
     );
 
 Por fim, executar 
+
     node index.js
+
 dentro do projeto.
